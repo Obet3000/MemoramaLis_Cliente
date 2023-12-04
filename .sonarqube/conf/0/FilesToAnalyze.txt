@@ -1,0 +1,3 @@
+﻿C:\Users\obeth\source\repos\MemoramaLis_Cliente\Logica\JugadorSingleton.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\Logica\PartidaSingleton.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\Logica\Properties\AssemblyInfo.cs

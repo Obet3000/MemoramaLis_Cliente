@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="ServicioPartida" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IServicioPartida_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8080/ServicioPartida?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8080/ServicioPartida?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8080/ServicioPartida?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Dominio" />
+      <xsd:import schemaLocation="http://localhost:8080/ServicioPartida?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicioPartida_UnirseAPartida_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnirseAPartida" />
+  </wsdl:message>
+  <wsdl:message name="IServicioPartida_EnviarMovimiento_InputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarMovimiento" />
+  </wsdl:message>
+  <wsdl:message name="IServicioPartida_SalirDePartida_InputMessage">
+    <wsdl:part name="parameters" element="tns:SalirDePartida" />
+  </wsdl:message>
+  <wsdl:message name="IServicioPartida_CrearPartida_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearPartida" />
+  </wsdl:message>
+  <wsdl:message name="IServicioPartida_BorrarPartida_InputMessage">
+    <wsdl:part name="parameters" element="tns:BorrarPartida" />
+  </wsdl:message>
+  <wsdl:message name="IServicioPartida_ContarJugadores_InputMessage">
+    <wsdl:part name="parameters" element="tns:ContarJugadores" />
+  </wsdl:message>
+  <wsdl:message name="IServicioPartida_IniciarJuego_InputMessage">
+    <wsdl:part name="parameters" element="tns:IniciarJuego" />
+  </wsdl:message>
+  <wsdl:message name="IServicioPartida_ActualizarInformacionDeJugador_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarInformacionDeJugador" />
+  </wsdl:message>
+  <wsdl:message name="IServicioPartida_ReportarJugador_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReportarJugador" />
+  </wsdl:message>
+  <wsdl:message name="IServicioPartida_TerminarPartida_InputMessage">
+    <wsdl:part name="parameters" element="tns:TerminarPartida" />
+  </wsdl:message>
+  <wsdl:message name="IServicioPartida_PasarTurno_InputMessage">
+    <wsdl:part name="parameters" element="tns:PasarTurno" />
+  </wsdl:message>
+  <wsdl:message name="IServicioPartida_RecibirTablero_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:RecibirTablero" />
+  </wsdl:message>
+  <wsdl:message name="IServicioPartida_RecibirMovimiento_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:RecibirMovimiento" />
+  </wsdl:message>
+  <wsdl:message name="IServicioPartida_ExpulsarJugador_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ExpulsarJugador" />
+  </wsdl:message>
+  <wsdl:message name="IServicioPartida_ObtenerListaDeJugadores_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerListaDeJugadores" />
+  </wsdl:message>
+  <wsdl:message name="IServicioPartida_ObtenerJugadorReportado_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerJugadorReportado" />
+  </wsdl:message>
+  <wsdl:message name="IServicioPartida_RespuestaDeUnirseAPartida_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:RespuestaDeUnirseAPartida" />
+  </wsdl:message>
+  <wsdl:message name="IServicioPartida_MostrarTerminarPartida_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:MostrarTerminarPartida" />
+  </wsdl:message>
+  <wsdl:message name="IServicioPartida_RecibirEstadoDePartida_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:RecibirEstadoDePartida" />
+  </wsdl:message>
+  <wsdl:message name="IServicioPartida_RecibirTurno_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:RecibirTurno" />
+  </wsdl:message>
+  <wsdl:portType name="IServicioPartida">
+    <wsdl:operation name="UnirseAPartida">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioPartida/UnirseAPartida" message="tns:IServicioPartida_UnirseAPartida_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EnviarMovimiento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioPartida/EnviarMovimiento" message="tns:IServicioPartida_EnviarMovimiento_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SalirDePartida">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioPartida/SalirDePartida" message="tns:IServicioPartida_SalirDePartida_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearPartida">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioPartida/CrearPartida" message="tns:IServicioPartida_CrearPartida_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BorrarPartida">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioPartida/BorrarPartida" message="tns:IServicioPartida_BorrarPartida_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ContarJugadores">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioPartida/ContarJugadores" message="tns:IServicioPartida_ContarJugadores_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IniciarJuego">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioPartida/IniciarJuego" message="tns:IServicioPartida_IniciarJuego_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarInformacionDeJugador">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioPartida/ActualizarInformacionDeJugador" message="tns:IServicioPartida_ActualizarInformacionDeJugador_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReportarJugador">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioPartida/ReportarJugador" message="tns:IServicioPartida_ReportarJugador_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TerminarPartida">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioPartida/TerminarPartida" message="tns:IServicioPartida_TerminarPartida_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PasarTurno">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioPartida/PasarTurno" message="tns:IServicioPartida_PasarTurno_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RecibirTablero">
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioPartida/RecibirTablero" message="tns:IServicioPartida_RecibirTablero_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RecibirMovimiento">
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioPartida/RecibirMovimiento" message="tns:IServicioPartida_RecibirMovimiento_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExpulsarJugador">
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioPartida/ExpulsarJugador" message="tns:IServicioPartida_ExpulsarJugador_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerListaDeJugadores">
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioPartida/ObtenerListaDeJugadores" message="tns:IServicioPartida_ObtenerListaDeJugadores_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerJugadorReportado">
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioPartida/ObtenerJugadorReportado" message="tns:IServicioPartida_ObtenerJugadorReportado_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RespuestaDeUnirseAPartida">
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioPartida/RespuestaDeUnirseAPartida" message="tns:IServicioPartida_RespuestaDeUnirseAPartida_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MostrarTerminarPartida">
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioPartida/MostrarTerminarPartida" message="tns:IServicioPartida_MostrarTerminarPartida_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RecibirEstadoDePartida">
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioPartida/RecibirEstadoDePartida" message="tns:IServicioPartida_RecibirEstadoDePartida_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RecibirTurno">
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioPartida/RecibirTurno" message="tns:IServicioPartida_RecibirTurno_OutputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IServicioPartida" type="tns:IServicioPartida">
+    <wsp:PolicyReference URI="#NetTcpBinding_IServicioPartida_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="UnirseAPartida">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/UnirseAPartida" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarMovimiento">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/EnviarMovimiento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="SalirDePartida">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/SalirDePartida" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="CrearPartida">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/CrearPartida" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="BorrarPartida">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/BorrarPartida" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="ContarJugadores">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/ContarJugadores" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="IniciarJuego">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/IniciarJuego" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarInformacionDeJugador">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/ActualizarInformacionDeJugador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="ReportarJugador">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/ReportarJugador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="TerminarPartida">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/TerminarPartida" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="PasarTurno">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/PasarTurno" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="RecibirTablero">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/RecibirTablero" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecibirMovimiento">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/RecibirMovimiento" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExpulsarJugador">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/ExpulsarJugador" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerListaDeJugadores">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/ObtenerListaDeJugadores" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerJugadorReportado">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/ObtenerJugadorReportado" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RespuestaDeUnirseAPartida">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/RespuestaDeUnirseAPartida" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MostrarTerminarPartida">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/MostrarTerminarPartida" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecibirEstadoDePartida">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/RecibirEstadoDePartida" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecibirTurno">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/RecibirTurno" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioPartida">
+    <wsdl:port name="NetTcpBinding_IServicioPartida" binding="tns:NetTcpBinding_IServicioPartida">
+      <soap12:address location="net.tcp://localhost:8090/ServicioPartida/ServicioPartida" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8090/ServicioPartida/ServicioPartida</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>DESKTOP-54H68P7\obeth</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

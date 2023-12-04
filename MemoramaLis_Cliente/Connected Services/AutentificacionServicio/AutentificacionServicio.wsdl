@@ -39,51 +39,15 @@
   <wsdl:message name="IAutentificacionServicio_AutentificacionUsuario_InputMessage">
     <wsdl:part name="parameters" element="tns:AutentificacionUsuario" />
   </wsdl:message>
-  <wsdl:message name="IAutentificacionServicio_RegistroJugador_InputMessage">
-    <wsdl:part name="parameters" element="tns:RegistroJugador" />
-  </wsdl:message>
-  <wsdl:message name="IAutentificacionServicio_ValidacionDeEmail_InputMessage">
-    <wsdl:part name="parameters" element="tns:ValidacionDeEmail" />
-  </wsdl:message>
-  <wsdl:message name="IAutentificacionServicio_UsuarioExistente_InputMessage">
-    <wsdl:part name="parameters" element="tns:UsuarioExistente" />
-  </wsdl:message>
   <wsdl:message name="IAutentificacionServicio_RespuestaAutentificacion_OutputCallbackMessage">
     <wsdl:part name="parameters" element="tns:RespuestaAutentificacion" />
-  </wsdl:message>
-  <wsdl:message name="IAutentificacionServicio_RespuestaEmail_OutputCallbackMessage">
-    <wsdl:part name="parameters" element="tns:RespuestaEmail" />
-  </wsdl:message>
-  <wsdl:message name="IAutentificacionServicio_Respuestaregistro_OutputCallbackMessage">
-    <wsdl:part name="parameters" element="tns:Respuestaregistro" />
-  </wsdl:message>
-  <wsdl:message name="IAutentificacionServicio_RespuestaUsuarioExistente_OutputCallbackMessage">
-    <wsdl:part name="parameters" element="tns:RespuestaUsuarioExistente" />
   </wsdl:message>
   <wsdl:portType name="IAutentificacionServicio">
     <wsdl:operation name="AutentificacionUsuario">
       <wsdl:input wsaw:Action="http://tempuri.org/IAutentificacionServicio/AutentificacionUsuario" message="tns:IAutentificacionServicio_AutentificacionUsuario_InputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="RegistroJugador">
-      <wsdl:input wsaw:Action="http://tempuri.org/IAutentificacionServicio/RegistroJugador" message="tns:IAutentificacionServicio_RegistroJugador_InputMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="ValidacionDeEmail">
-      <wsdl:input wsaw:Action="http://tempuri.org/IAutentificacionServicio/ValidacionDeEmail" message="tns:IAutentificacionServicio_ValidacionDeEmail_InputMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="UsuarioExistente">
-      <wsdl:input wsaw:Action="http://tempuri.org/IAutentificacionServicio/UsuarioExistente" message="tns:IAutentificacionServicio_UsuarioExistente_InputMessage" />
-    </wsdl:operation>
     <wsdl:operation name="RespuestaAutentificacion">
       <wsdl:output wsaw:Action="http://tempuri.org/IAutentificacionServicio/RespuestaAutentificacion" message="tns:IAutentificacionServicio_RespuestaAutentificacion_OutputCallbackMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="RespuestaEmail">
-      <wsdl:output wsaw:Action="http://tempuri.org/IAutentificacionServicio/RespuestaEmail" message="tns:IAutentificacionServicio_RespuestaEmail_OutputCallbackMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="Respuestaregistro">
-      <wsdl:output wsaw:Action="http://tempuri.org/IAutentificacionServicio/Respuestaregistro" message="tns:IAutentificacionServicio_Respuestaregistro_OutputCallbackMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="RespuestaUsuarioExistente">
-      <wsdl:output wsaw:Action="http://tempuri.org/IAutentificacionServicio/RespuestaUsuarioExistente" message="tns:IAutentificacionServicio_RespuestaUsuarioExistente_OutputCallbackMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="NetTcpBinding_IAutentificacionServicio" type="tns:IAutentificacionServicio">
@@ -95,44 +59,8 @@
         <soap12:body use="literal" />
       </wsdl:input>
     </wsdl:operation>
-    <wsdl:operation name="RegistroJugador">
-      <soap12:operation soapAction="http://tempuri.org/IAutentificacionServicio/RegistroJugador" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-    </wsdl:operation>
-    <wsdl:operation name="ValidacionDeEmail">
-      <soap12:operation soapAction="http://tempuri.org/IAutentificacionServicio/ValidacionDeEmail" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-    </wsdl:operation>
-    <wsdl:operation name="UsuarioExistente">
-      <soap12:operation soapAction="http://tempuri.org/IAutentificacionServicio/UsuarioExistente" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-    </wsdl:operation>
     <wsdl:operation name="RespuestaAutentificacion">
       <soap12:operation soapAction="http://tempuri.org/IAutentificacionServicio/RespuestaAutentificacion" style="document" />
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="RespuestaEmail">
-      <soap12:operation soapAction="http://tempuri.org/IAutentificacionServicio/RespuestaEmail" style="document" />
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Respuestaregistro">
-      <soap12:operation soapAction="http://tempuri.org/IAutentificacionServicio/Respuestaregistro" style="document" />
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="RespuestaUsuarioExistente">
-      <soap12:operation soapAction="http://tempuri.org/IAutentificacionServicio/RespuestaUsuarioExistente" style="document" />
       <wsdl:output>
         <soap12:body use="literal" />
       </wsdl:output>

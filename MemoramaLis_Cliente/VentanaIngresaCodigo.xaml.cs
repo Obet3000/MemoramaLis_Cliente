@@ -31,12 +31,21 @@ namespace MemoramaLis_Cliente
         private void BtnAceptar_Click(object sender, RoutedEventArgs e)
         {
             CodigoSala = TBCodigo.Text;
-            this.Close();  
+            if (CodigoSala != "" && CodigoSala != null)
+            {
+                this.Close();
+            }
+            else 
+            {
+                MessageBox.Show("Ingrese un codigo valido");
+            }
+            
         }
 
         private void BtnCancelar_Click(object sender, RoutedEventArgs e)
         {
             CodigoSala = null;
+            this.Close();
         }
 
    

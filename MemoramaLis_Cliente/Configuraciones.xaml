@@ -33,16 +33,9 @@
                     </StackPanel>
                 </Border>
 
-                <Border Background="#9DDBFD" Margin="20" CornerRadius="20" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="2">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Volumen" FontSize="40" FontFamily="Inter" FontWeight="Normal" Foreground="Black" TextWrapping="Wrap"/>
-                        <Slider Name="VolumenSlider" Background="Transparent" Minimum="0" Maximum="100" Value="50" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" TickFrequency="10" TickPlacement="BottomRight"/>
-                    </StackPanel>
-                </Border>
+                <Border Background="#9DDBFD" Margin="20" CornerRadius="20" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="2"/>
 
-                <Border Background="#9DDBFD" Margin="20" CornerRadius="20" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="1">
-                    <TextBlock Text="Activar musica: Sí" FontSize="40" FontFamily="Inter" FontWeight="Normal" Foreground="Black" TextWrapping="Wrap"/>
-                </Border>
+                <Border Background="#9DDBFD" Margin="20" CornerRadius="20" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="1"/>
                 <StackPanel Margin="20" HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="4">
                     <Button Content="Guardar" Width="275" Height="68" Background="#18529D" Foreground="White" BorderThickness="1" BorderBrush="Black" FontSize="40" FontFamily="Inter" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10, 0, 10, 0" />
                     <Button Content="Volver" Width="275" Height="68" Background="#28AD56" Foreground="White" BorderThickness="1" BorderBrush="Black" FontSize="40" FontFamily="Inter" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10, 0, 10, 0" />

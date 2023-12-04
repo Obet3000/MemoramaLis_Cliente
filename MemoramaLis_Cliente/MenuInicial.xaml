@@ -39,9 +39,9 @@
                 <Label  Foreground="White"  Background="Black" FontSize="15" Padding="8" HorizontalContentAlignment="Center" VerticalAlignment="Stretch"  HorizontalAlignment="Stretch" Content="Amigos" Grid.Row="1" Grid.Column="2" />
                 <ListBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.Column="2" d:ItemsSource="{d:SampleData ItemCount=5}" Height="54"/>
             </StackPanel>
-            <StackPanel Grid.Column="0" Grid.Row="1" Width="auto" Height="auto">
-                <Button Content="Crear chat" x:Name="BtnCrearChat" Click="BtnCrearChat_Click"  />
-                <Button Content="Unirse a chat" x:Name="BtnUnirseAChat" Click="BtnUnirseAChat_Click"/>
+            <StackPanel Grid.Row="4" Grid.Column="2">
+                <Button Content="Crear Partida" Margin="10" Click="BtnCrearPartida_Click"/>
+                <Button Content="Unirse A Partida" Margin="10" Click="BtnUniserAPartida_Click"/>
             </StackPanel>
         </Grid>
 
