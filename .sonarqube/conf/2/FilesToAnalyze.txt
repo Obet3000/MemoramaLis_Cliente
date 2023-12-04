@@ -1,0 +1,102 @@
+﻿C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\App.xaml
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Chat.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Configuraciones.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\MostrarGanadores.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Partida.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\RegistroDeJugadores.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\SalaDeEspera.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\TablaPuntuaciones.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Utilidades.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\VentanaIngresaCodigo.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\App.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\MainWindow.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\MenuInicial.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Properties\AssemblyInfo.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Properties\Resources.resx
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\AutentificacionServicio\AutentificacionServicio.wsdl
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\AutentificacionServicio\AutentificacionServicio.xsd
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\AutentificacionServicio\AutentificacionServicio1.xsd
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\AutentificacionServicio\AutentificacionServicio2.xsd
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioChat\ServicioChat.wsdl
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioChat\ServicioChat.xsd
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioChat\ServicioChat1.xsd
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioPartida\ServicioPartida.wsdl
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioPartida\ServicioPartida.xsd
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioPartida\ServicioPartida1.xsd
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioPartida\ServicioPartida2.xsd
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioPartida\ServicioPartida3.xsd
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\packages.config
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Properties\Settings.settings
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\App.config
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\AutentificacionServicio\configuration91.svcinfo
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\AutentificacionServicio\configuration.svcinfo
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\AutentificacionServicio\Reference.svcmap
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioChat\ServicioChat.disco
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioChat\configuration91.svcinfo
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioChat\configuration.svcinfo
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioChat\Reference.svcmap
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\AutentificacionServicio\AutentificacionServicio.disco
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioPartida\configuration91.svcinfo
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioPartida\configuration.svcinfo
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioPartida\Reference.svcmap
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Chat.xaml
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Configuraciones.xaml
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\MainWindow.xaml
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\MenuInicial.xaml
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\MostrarGanadores.xaml
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Partida.xaml
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\RegistroDeJugadores.xaml
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\SalaDeEspera.xaml
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\TablaPuntuaciones.xaml
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\VentanaIngresaCodigo.xaml
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\1-Microsoft.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\10-JavaScript.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\11-Scrum.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\12-GoogleCloud.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\13-AmazonWebService.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\14-AndroidStudio.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\15-CicloDeVida.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\16-DiagramaDeComunicacion.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\17-UML.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\18-DiagramaDeEstados.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\19-DiagramaDeSecuencia.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\2-VisualStudio.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\20-EnterpriseArchitect.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\21-Atom.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\22-DiagramaDeClases.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\23-FishBone.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\24-SixSigma.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\25-MySql.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\26-SqlServer.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\27-Figma.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\28-Diseño.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\29-Testing.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\3-GitHub.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\30-Requerimientos.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\31-Desarrollo.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\32-Codigo.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\33-Python.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\34-Lisp.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\35-Prolog.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\36-Git.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\37-Linux.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\38-Window.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\39-TcpIp.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\4-Java.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\40-AdaLovace.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\41-Oracle.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\42-BaseDeDatos.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\43-Azure.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\44-Bash.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\45-Docker.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\46-C.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\47-Php.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\48-DennisRitchie.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\49-BrianKernigan.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\5-BUG.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\50-AlanTuring.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\6-Laptop.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\7-CPlusPlus.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\8.StackOverFlow.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\9-Angular.png
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Imagenes\ReversoCarta.png

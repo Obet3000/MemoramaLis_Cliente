@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MemoramaLis_Cliente.AutentificacionServicio {
+namespace MemoramaLis_Cliente.ServicioRegistro {
     using System.Runtime.Serialization;
     using System;
     
@@ -155,57 +155,85 @@ namespace MemoramaLis_Cliente.AutentificacionServicio {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="AutentificacionServicio.IAutentificacionServicio", CallbackContract=typeof(MemoramaLis_Cliente.AutentificacionServicio.IAutentificacionServicioCallback))]
-    public interface IAutentificacionServicio {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServicioRegistro.IServicioRegistro", CallbackContract=typeof(MemoramaLis_Cliente.ServicioRegistro.IServicioRegistroCallback))]
+    public interface IServicioRegistro {
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IAutentificacionServicio/AutentificacionUsuario")]
-        void AutentificacionUsuario(string email, string contrasenia);
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IServicioRegistro/EnviarCodigoDeValidacion")]
+        void EnviarCodigoDeValidacion(string email, string destinatario);
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IAutentificacionServicio/AutentificacionUsuario")]
-        System.Threading.Tasks.Task AutentificacionUsuarioAsync(string email, string contrasenia);
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IServicioRegistro/EnviarCodigoDeValidacion")]
+        System.Threading.Tasks.Task EnviarCodigoDeValidacionAsync(string email, string destinatario);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IServicioRegistro/ValidarCodigo")]
+        void ValidarCodigo(MemoramaLis_Cliente.ServicioRegistro.JugadoresDTO jugadorDTO, int codigo);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IServicioRegistro/ValidarCodigo")]
+        System.Threading.Tasks.Task ValidarCodigoAsync(MemoramaLis_Cliente.ServicioRegistro.JugadoresDTO jugadorDTO, int codigo);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IServicioRegistro/UsuarioExistente")]
+        void UsuarioExistente(string usuario, string email);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IServicioRegistro/UsuarioExistente")]
+        System.Threading.Tasks.Task UsuarioExistenteAsync(string usuario, string email);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IAutentificacionServicioCallback {
+    public interface IServicioRegistroCallback {
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IAutentificacionServicio/RespuestaAutentificacion")]
-        void RespuestaAutentificacion(MemoramaLis_Cliente.AutentificacionServicio.JugadoresDTO jugador);
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IServicioRegistro/RecibirRespuesta")]
+        void RecibirRespuesta(string codigo);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IAutentificacionServicioChannel : MemoramaLis_Cliente.AutentificacionServicio.IAutentificacionServicio, System.ServiceModel.IClientChannel {
+    public interface IServicioRegistroChannel : MemoramaLis_Cliente.ServicioRegistro.IServicioRegistro, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class AutentificacionServicioClient : System.ServiceModel.DuplexClientBase<MemoramaLis_Cliente.AutentificacionServicio.IAutentificacionServicio>, MemoramaLis_Cliente.AutentificacionServicio.IAutentificacionServicio {
+    public partial class ServicioRegistroClient : System.ServiceModel.DuplexClientBase<MemoramaLis_Cliente.ServicioRegistro.IServicioRegistro>, MemoramaLis_Cliente.ServicioRegistro.IServicioRegistro {
         
-        public AutentificacionServicioClient(System.ServiceModel.InstanceContext callbackInstance) : 
+        public ServicioRegistroClient(System.ServiceModel.InstanceContext callbackInstance) : 
                 base(callbackInstance) {
         }
         
-        public AutentificacionServicioClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName) : 
+        public ServicioRegistroClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName) : 
                 base(callbackInstance, endpointConfigurationName) {
         }
         
-        public AutentificacionServicioClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, string remoteAddress) : 
+        public ServicioRegistroClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, string remoteAddress) : 
                 base(callbackInstance, endpointConfigurationName, remoteAddress) {
         }
         
-        public AutentificacionServicioClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public ServicioRegistroClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(callbackInstance, endpointConfigurationName, remoteAddress) {
         }
         
-        public AutentificacionServicioClient(System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public ServicioRegistroClient(System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(callbackInstance, binding, remoteAddress) {
         }
         
-        public void AutentificacionUsuario(string email, string contrasenia) {
-            base.Channel.AutentificacionUsuario(email, contrasenia);
+        public void EnviarCodigoDeValidacion(string email, string destinatario) {
+            base.Channel.EnviarCodigoDeValidacion(email, destinatario);
         }
         
-        public System.Threading.Tasks.Task AutentificacionUsuarioAsync(string email, string contrasenia) {
-            return base.Channel.AutentificacionUsuarioAsync(email, contrasenia);
+        public System.Threading.Tasks.Task EnviarCodigoDeValidacionAsync(string email, string destinatario) {
+            return base.Channel.EnviarCodigoDeValidacionAsync(email, destinatario);
+        }
+        
+        public void ValidarCodigo(MemoramaLis_Cliente.ServicioRegistro.JugadoresDTO jugadorDTO, int codigo) {
+            base.Channel.ValidarCodigo(jugadorDTO, codigo);
+        }
+        
+        public System.Threading.Tasks.Task ValidarCodigoAsync(MemoramaLis_Cliente.ServicioRegistro.JugadoresDTO jugadorDTO, int codigo) {
+            return base.Channel.ValidarCodigoAsync(jugadorDTO, codigo);
+        }
+        
+        public void UsuarioExistente(string usuario, string email) {
+            base.Channel.UsuarioExistente(usuario, email);
+        }
+        
+        public System.Threading.Tasks.Task UsuarioExistenteAsync(string usuario, string email) {
+            return base.Channel.UsuarioExistenteAsync(usuario, email);
         }
     }
 }

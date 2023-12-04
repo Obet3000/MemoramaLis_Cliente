@@ -1,0 +1,40 @@
+﻿C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Chat.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Configuraciones.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\MostrarGanadores.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Partida.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\RegistroDeJugadores.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\SalaDeEspera.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\TablaPuntuaciones.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Utilidades.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\VentanaIngresaCodigo.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\App.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\MainWindow.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\MenuInicial.xaml.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Properties\AssemblyInfo.cs
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Properties\Resources.resx
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\AutentificacionServicio\AutentificacionServicio.wsdl
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\AutentificacionServicio\AutentificacionServicio.xsd
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\AutentificacionServicio\AutentificacionServicio1.xsd
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\AutentificacionServicio\AutentificacionServicio2.xsd
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioChat\ServicioChat.wsdl
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioChat\ServicioChat.xsd
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioChat\ServicioChat1.xsd
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioPartida\ServicioPartida.wsdl
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioPartida\ServicioPartida.xsd
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioPartida\ServicioPartida1.xsd
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioPartida\ServicioPartida2.xsd
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioPartida\ServicioPartida3.xsd
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\packages.config
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Properties\Settings.settings
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\App.config
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\AutentificacionServicio\configuration91.svcinfo
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\AutentificacionServicio\configuration.svcinfo
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\AutentificacionServicio\Reference.svcmap
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioChat\ServicioChat.disco
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioChat\configuration91.svcinfo
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioChat\configuration.svcinfo
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioChat\Reference.svcmap
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\AutentificacionServicio\AutentificacionServicio.disco
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioPartida\configuration91.svcinfo
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioPartida\configuration.svcinfo
+C:\Users\obeth\source\repos\MemoramaLis_Cliente\MemoramaLis_Cliente\Connected Services\ServicioPartida\Reference.svcmap

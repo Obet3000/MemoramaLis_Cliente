@@ -14,6 +14,7 @@ namespace Logica
         public string codigoDePartida { get; set; }
         public bool tipoDeJuego { get; set; }
         public int numeroDeJugadores { get; set; }
+        public Dictionary<int, string> tablero { get; set; }
         private PartidaSingleton()
         {
         }

@@ -16,9 +16,9 @@ namespace MemoramaLis_Cliente
         public MainWindow()
         {
             InitializeComponent();
-            
+            this.ShowsNavigationUI = false;
             context = new InstanceContext(this);
-          
+            TBEmail.Focus(); 
         }
         public void RespuestaAutentificacion(JugadoresDTO jugador)
         {
@@ -36,22 +36,6 @@ namespace MemoramaLis_Cliente
                 MessageBox.Show("El email o el usuario es erróneo.");
             }
         }
-
-        public void RespuestaEmail(string codigoVerificacíon)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Respuestaregistro(bool estado)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void RespuestaUsuarioExistente(bool status)
-        {
-            throw new NotImplementedException();
-        }
-
 
         private void IniciarSesion_Click(object sender, RoutedEventArgs e)
         {

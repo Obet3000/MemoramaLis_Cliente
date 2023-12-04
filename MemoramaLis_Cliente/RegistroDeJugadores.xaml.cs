@@ -1,4 +1,4 @@
-﻿using MemoramaLis_Cliente.AutentificacionServicio;
+﻿using MemoramaLis_Cliente.ServicioRegistro;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,37 +22,16 @@ namespace MemoramaLis_Cliente
     /// <summary>
     /// Lógica de interacción para RegistroDeJugadores.xaml
     /// </summary>
-    public partial class RegistroDeJugadores : Page, IAutentificacionServicioCallback
+    public partial class RegistroDeJugadores : Page, IServicioRegistroCallback
     {
 
-        private IAutentificacionServicio _servicio;
+        private IServicioRegistro servicioRegistro;
 
         public RegistroDeJugadores()
         {
             InitializeComponent();
-            _servicio = new AutentificacionServicioClient(new InstanceContext(this));
-        }
-
-        public void RespuestaAutentificacion(JugadoresDTO jugador)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void RespuestaEmail(string codigoVerificacíon)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Respuestaregistro(bool estado)
-        {
-            if (estado == true) {
-                MessageBox.Show("Usuario registrado exitosamente");
-            }
-        }
-
-        public void RespuestaUsuarioExistente(bool status)
-        {
-            throw new NotImplementedException();
+            servicioRegistro = new ServicioRegistroClient(new InstanceContext(this));
+            this.ShowsNavigationUI = false;
         }
 
         public void RegistrarJugador()
@@ -69,7 +48,13 @@ namespace MemoramaLis_Cliente
                     jugador.Email = email;
                     if (PBContrasenia.Password == PBConfirmacionContrasenia.Password && ValidarContraseniaSegura(PBContrasenia.Password))
                     {
-                        _servicio.RegistroJugador(jugador);
+                        servicioRegistro.EnviarCodigoDeValidacion(jugador.Email, jugador.Email);
+                        VentanaIngresaCodigoDeValidacion ventanaIngresaCodigoDeValidacion = new VentanaIngresaCodigoDeValidacion();
+                        ventanaIngresaCodigoDeValidacion.ShowDialog();
+                        if (ventanaIngresaCodigoDeValidacion.CodigoValidacion != -1) {
+                            servicioRegistro.ValidarCodigo(jugador, ventanaIngresaCodigoDeValidacion.CodigoValidacion);
+                        }
+                        
                     }
                     else
                     {
@@ -115,6 +100,14 @@ namespace MemoramaLis_Cliente
         {
             RegistrarJugador();
         }
-        
+
+        public void RecibirRespuesta(string codigo)
+        {
+            if (codigo == "El codigo es valido") {
+                MessageBox.Show(codigo);
+                this.NavigationService.GoBack();
+            }
+
+        }
     }
 }

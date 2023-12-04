@@ -53,5 +53,24 @@ namespace MemoramaLis_Cliente
             }
 
         }
+
+        private void BtnCrearPartida_Click(object sender, RoutedEventArgs e)
+        {
+            SalaDeEspera salaDeEspera = new SalaDeEspera(null);
+            this.NavigationService.Navigate(salaDeEspera);
+
+        }
+
+        private void BtnUniserAPartida_Click(object sender, RoutedEventArgs e)
+        {
+            VentanaIngresaCodigo ventanaIngresaCodigo = new VentanaIngresaCodigo();
+            ventanaIngresaCodigo.ShowDialog();
+            if (ventanaIngresaCodigo.CodigoSala != null)
+            {
+                string codigoSala = ventanaIngresaCodigo.CodigoSala;
+                SalaDeEspera salaDeEspera = new SalaDeEspera(codigoSala);
+                this.NavigationService.Navigate(salaDeEspera);
+            }
+        }
     }
 }

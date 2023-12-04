@@ -7,73 +7,88 @@
       mc:Ignorable="d" 
       d:DesignHeight="640" d:DesignWidth="1024"
       Title="SalaDeEspera">
-
+   
     <Grid Background="White" Height="auto">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-            
+
         </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
-        <Grid Grid.Row="0" Margin="0">
-            <Border Width="auto" Height="auto" HorizontalAlignment="Right" Background="#28AD56" BorderThickness="1" CornerRadius="10" Margin="0, 0, 0, 0">
-                <Button Content="Configuraciones" FontSize="48" FontFamily="Inter" FontWeight="SemiBold" Foreground="White" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10"/>
+        <Border Width="auto" Grid.Row="0" Grid.Column="2" Height="auto" HorizontalAlignment="Right" Background="#28AD56" BorderThickness="1" CornerRadius="10" Margin="0, 0, 0, 0">
+            <Button Content="Configuraciones" FontSize="48" FontFamily="Inter" FontWeight="SemiBold" Foreground="White" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10"/>
+        </Border>
+        <Border HorizontalAlignment="Left" Grid.Row="0" Grid.Column="0" Width="auto" Height="auto" Background="#18529D" BorderThickness="1" CornerRadius="10">
+            <Button Content="Perfil" FontSize="48" FontFamily="Inter" FontWeight="SemiBold" Foreground="White"  HorizontalAlignment="Center" Background="Transparent" VerticalAlignment="Center" Padding="10"/>
+        </Border>
+
+
+
+        <Border Grid.Row="1" Grid.Column="2" Width="auto" Height="auto" Background="White" BorderBrush="Black" BorderThickness="4" CornerRadius="10" HorizontalAlignment="Right" Margin="10">
+            <TextBlock Text="Modo Todos contra todos" FontSize="32" FontFamily="Inter" FontWeight="Normal" Foreground="Black" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10"/>
+        </Border>
+
+        <StackPanel HorizontalAlignment="Center" Grid.Column="1" Grid.Row="2" Orientation="Horizontal">
+
+            <StackPanel Width="auto" Height="auto" Orientation="Vertical">
+                <Border Width="auto" Height="auto" Background="Black" BorderBrush="Black" CornerRadius="10" Margin="10, 0, 0, 0">
+                    <Image Height="120" Name="ImgJugador1" Stretch="UniformToFill" />
+                </Border>
+                <Label Name="LBNombreJugador1" HorizontalContentAlignment="Center" ></Label>
+            </StackPanel>
+
+            <StackPanel Width="auto" Height="auto" Orientation="Vertical">
+                <Border Width="auto" Height="auto" Background="Black" BorderBrush="Black" CornerRadius="10" Margin="10, 0, 0, 0">
+                    <Image  Height="120" Name="ImgJugador2" Stretch="UniformToFill" />
+                </Border>
+                <Label Name="LBNombreJugador2" HorizontalContentAlignment="Center" ></Label>
+            </StackPanel>
+
+            <StackPanel Width="auto" Height="auto" Orientation="Vertical">
+                <Border Width="auto" Height="auto" Background="Black" BorderBrush="Black" CornerRadius="10" Margin="10, 0, 0, 0">
+                    <Image  Height="120" Name="ImgJugador3" Stretch="UniformToFill"/>
+                </Border>
+                <Label Name="LBNombreJugador3" HorizontalContentAlignment="Center" ></Label>
+            </StackPanel>
+
+            <StackPanel Width="auto" Height="auto" Orientation="Vertical">
+                <Border Width="auto" Height="auto" Background="Black" BorderBrush="Black" CornerRadius="10" Margin="10, 0, 0, 0">
+                    <Image  Height="120" Name="ImgJugador4" Stretch="UniformToFill"   />
+                </Border>
+                <Label Name="LBNombreJugador4" HorizontalContentAlignment="Center" ></Label>
+            </StackPanel>
+        </StackPanel>
+        <Border Grid.Row="3" Grid.Column="0" Width="auto" VerticalAlignment="Bottom" Height="97" Background="White" BorderBrush="Black" BorderThickness="4" CornerRadius="10" HorizontalAlignment="Left">
+            <Button Background="Transparent"  Content="Cancelar" FontSize="36" FontFamily="Inter" FontWeight="Normal" Foreground="Black" VerticalAlignment="Center" Padding="10" Click="Button_Click"/>
+        </Border>
+
+        <StackPanel Grid.Row="3" Grid.Column="3" HorizontalAlignment="Right" Width="auto" Height="auto">
+
+            <Border VerticalAlignment="Bottom"  Width="auto" Background="White" BorderBrush="Black" BorderThickness="1" CornerRadius="10" Margin="0, 0, 0, 0">
+                <TextBlock Text="Cambiar modo" FontSize="40" FontFamily="Inter" FontWeight="SemiBold" Foreground="Black" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10"/>
             </Border>
-            <Border HorizontalAlignment="Left" Width="auto" Height="auto" Background="#18529D" BorderThickness="1" CornerRadius="10">
-                <Button Content="Perfil" FontSize="48" FontFamily="Inter" FontWeight="SemiBold" Foreground="White"  HorizontalAlignment="Center" Background="Transparent" VerticalAlignment="Center" Padding="10"/>
-            </Border>
-
-        </Grid>
-
-
-        <Border Grid.Row="1" Width="auto" Height="auto" Background="White" BorderBrush="Black" BorderThickness="4" CornerRadius="10" HorizontalAlignment="Right" Margin="10">
-                <TextBlock Text="Modo Todos contra todos" FontSize="32" FontFamily="Inter" FontWeight="Normal" Foreground="Black" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10"/>
-            </Border>
-        
-
-
-
-
-
-
-        <StackPanel HorizontalAlignment="Center" Grid.Row="2" Orientation="Horizontal">
-            <Border Width="100" Height="auto" Background="Black" BorderBrush="Black" BorderThickness="1" CornerRadius="10" Margin="10, 0, 0, 0">
-
-            </Border>
-            <Border Width="100" Height="auto" Background="Black" BorderBrush="Black" BorderThickness="1" CornerRadius="10" Margin="10, 0, 0, 0">
-
-            </Border>
-
-            <Border Width="100" Height="auto" Background="Black" BorderBrush="Black" BorderThickness="1" CornerRadius="10" Margin="10, 0, 0, 0">
-
-            </Border>
-            <Border Width="100" Height="auto" Background="Black" BorderBrush="Black" BorderThickness="1" CornerRadius="10" Margin="10, 0, 0, 0">
-
+            <Border  Width="auto" Height="97" Background="White" BorderBrush="Black" BorderThickness="4" CornerRadius="10" Margin="10, 0, 0, 0">
+                <Button x:Name="BtnIniciarJuego" Height="auto" Width="auto" Background="Transparent" Content="Iniciar juego" FontSize="36" FontFamily="Inter" FontWeight="Normal" Foreground="Black"  HorizontalAlignment="Right" VerticalAlignment="Center" Padding="10" Margin="0,0,34,0" Click="IniciarPartida_Click"/>
             </Border>
         </StackPanel>
 
-        <Grid Grid.Row="3"  Width="auto" VerticalAlignment="Center" Height="auto">
+        <Grid Background="White" Grid.Row="2" Grid.Column="0" Height="auto" Width="auto">
+            
+            <TextBlock Name="TBChat" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
 
-            <Border Width="auto" VerticalAlignment="Bottom" Height="97" Background="White" BorderBrush="Black" BorderThickness="4" CornerRadius="10" HorizontalAlignment="Left">
-                <Button Background="Transparent"  Content="Cancelar" FontSize="36" FontFamily="Inter" FontWeight="Normal" Foreground="Black" VerticalAlignment="Center" Padding="10"/>
-            </Border>
-
-            <StackPanel HorizontalAlignment="Right" Width="auto" Height="auto">
-
-                <Border VerticalAlignment="Bottom"  Width="auto" Background="White" BorderBrush="Black" BorderThickness="1" CornerRadius="10" Margin="0, 0, 0, 0">
-                    <TextBlock Text="Cambiar modo" FontSize="40" FontFamily="Inter" FontWeight="SemiBold" Foreground="Black" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10"/>
-                </Border>
-                <Border Width="auto" Height="97" Background="White" BorderBrush="Black" BorderThickness="4" CornerRadius="10" Margin="10, 0, 0, 0">
-                    <Button Background="Transparent" Content="Buscar Partida" FontSize="36" FontFamily="Inter" FontWeight="Normal" Foreground="Black"  HorizontalAlignment="Right" VerticalAlignment="Center" Padding="10" Margin="0,0,34,0"/>
-                </Border>
+            </TextBlock>
+            <StackPanel  Margin="1" Width="auto" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Orientation="Vertical" Height="auto">
+                <TextBox Name="TBMensaje" Margin="1" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Width="auto" />
+                <Button Content="Enviar" Name="BtnEnviar" HorizontalAlignment="Stretch" VerticalAlignment="Center" Width="auto" Height="auto" Click="BtnEnviar_Click" />
             </StackPanel>
-
         </Grid>
-
     </Grid>
-
-
 </Page>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="3ccea895-20fe-40d0-a225-18e79a9a0b9f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8080/ServicioRegistro" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioRegistro.xsd" MetadataType="Schema" ID="c96459bb-e4b8-4266-b193-bb605fab27de" SourceId="1" SourceUrl="http://localhost:8080/ServicioRegistro?xsd=xsd2" />
+    <MetadataFile FileName="ServicioRegistro.wsdl" MetadataType="Wsdl" ID="67cb65d7-789a-48f5-9955-fa90afd3f3cd" SourceId="1" SourceUrl="http://localhost:8080/ServicioRegistro?wsdl" />
+    <MetadataFile FileName="ServicioRegistro1.xsd" MetadataType="Schema" ID="4ec62767-69c2-4c5c-972d-3814232b11ab" SourceId="1" SourceUrl="http://localhost:8080/ServicioRegistro?xsd=xsd1" />
+    <MetadataFile FileName="ServicioRegistro.disco" MetadataType="Disco" ID="6d041028-5dc8-4573-badf-a0d120f51faa" SourceId="1" SourceUrl="http://localhost:8080/ServicioRegistro?disco" />
+    <MetadataFile FileName="ServicioRegistro2.xsd" MetadataType="Schema" ID="e55bcbc8-33eb-4384-a0fd-71a74c2f2bd7" SourceId="1" SourceUrl="http://localhost:8080/ServicioRegistro?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

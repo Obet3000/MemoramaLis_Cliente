@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ServiceModel;
 
 namespace Logica
 {
@@ -12,6 +13,7 @@ namespace Logica
         public int Puntuacion { get; set; }
         public bool EstadoJugador { get; set; }
 
+        public InstanceContext conexion { get; set; } 
         private JugadorSingleton()
         {
         }
