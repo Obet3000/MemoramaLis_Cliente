@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MemoramaLis_Cliente.ServicioPartida;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,11 @@ namespace MemoramaLis_Cliente
     /// </summary>
     public partial class MostrarGanadores : Page
     {
-        public MostrarGanadores()
+        public MostrarGanadores(JugadoresDTO ganador)
         {
             InitializeComponent();
+            ImgGanador.Source = new BitmapImage(new Uri(ganador.Fotos, UriKind.Relative));
+            TBPuntuacion.Text = ""+ganador.puntos;
         }
     }
 }

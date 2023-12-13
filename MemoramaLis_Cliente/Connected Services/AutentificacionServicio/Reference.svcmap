@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8080/AutentificacionServicio" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://192.168.100.68:8080/AutentificacionServicio" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="AutentificacionServicio.xsd" MetadataType="Schema" ID="77fe44b1-5167-4d2f-a1de-fe532a6f9f79" SourceId="1" SourceUrl="http://localhost:8080/AutentificacionServicio?xsd=xsd0" />
-    <MetadataFile FileName="AutentificacionServicio.disco" MetadataType="Disco" ID="024d77c3-4fc3-4923-b2fa-94698de42a7a" SourceId="1" SourceUrl="http://localhost:8080/AutentificacionServicio?disco" />
-    <MetadataFile FileName="AutentificacionServicio1.xsd" MetadataType="Schema" ID="bd2d5c97-a576-4b2e-a734-5e09f69e7cac" SourceId="1" SourceUrl="http://localhost:8080/AutentificacionServicio?xsd=xsd2" />
-    <MetadataFile FileName="AutentificacionServicio2.xsd" MetadataType="Schema" ID="aeacd3cc-dbea-411c-b64e-ec85ecd0b1c4" SourceId="1" SourceUrl="http://localhost:8080/AutentificacionServicio?xsd=xsd1" />
-    <MetadataFile FileName="AutentificacionServicio.wsdl" MetadataType="Wsdl" ID="cec77dc8-8ae4-449e-94e9-fae90cbf0819" SourceId="1" SourceUrl="http://localhost:8080/AutentificacionServicio?wsdl" />
+    <MetadataFile FileName="AutentificacionServicio3.xsd" MetadataType="Schema" ID="4cdae5ff-3e1b-44f2-9761-d2e14830056a" SourceId="1" SourceUrl="http://192.168.100.68:8080/AutentificacionServicio?xsd=xsd0" />
+    <MetadataFile FileName="AutentificacionServicio1.wsdl" MetadataType="Wsdl" ID="fc1e26fb-c666-4555-83e3-906e1823ab13" SourceId="1" SourceUrl="http://192.168.100.68:8080/AutentificacionServicio?wsdl" />
+    <MetadataFile FileName="AutentificacionServicio1.disco" MetadataType="Disco" ID="772a288c-74aa-43b0-9b6a-71f3a630120b" SourceId="1" SourceUrl="http://192.168.100.68:8080/AutentificacionServicio?disco" />
+    <MetadataFile FileName="AutentificacionServicio31.xsd" MetadataType="Schema" ID="19af4f16-8d2b-433d-8eab-e7b8efe6fce4" SourceId="1" SourceUrl="http://192.168.100.68:8080/AutentificacionServicio?xsd=xsd2" />
+    <MetadataFile FileName="AutentificacionServicio32.xsd" MetadataType="Schema" ID="94c66c10-b77d-4772-87de-5b046f832f0e" SourceId="1" SourceUrl="http://192.168.100.68:8080/AutentificacionServicio?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

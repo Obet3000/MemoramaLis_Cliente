@@ -254,6 +254,9 @@ namespace MemoramaLis_Cliente.ServicioPartida {
         
         [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IServicioPartida/RecibirTurno")]
         void RecibirTurno(int turno);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IServicioPartida/RecibirGanador")]
+        void RecibirGanador(MemoramaLis_Cliente.ServicioPartida.JugadoresDTO ganador);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]

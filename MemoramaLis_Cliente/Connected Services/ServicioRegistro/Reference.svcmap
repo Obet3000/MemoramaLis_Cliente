@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8080/ServicioRegistro" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://192.168.100.68:8080/ServicioRegistro" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServicioRegistro.xsd" MetadataType="Schema" ID="c96459bb-e4b8-4266-b193-bb605fab27de" SourceId="1" SourceUrl="http://localhost:8080/ServicioRegistro?xsd=xsd2" />
-    <MetadataFile FileName="ServicioRegistro.wsdl" MetadataType="Wsdl" ID="67cb65d7-789a-48f5-9955-fa90afd3f3cd" SourceId="1" SourceUrl="http://localhost:8080/ServicioRegistro?wsdl" />
-    <MetadataFile FileName="ServicioRegistro1.xsd" MetadataType="Schema" ID="4ec62767-69c2-4c5c-972d-3814232b11ab" SourceId="1" SourceUrl="http://localhost:8080/ServicioRegistro?xsd=xsd1" />
-    <MetadataFile FileName="ServicioRegistro.disco" MetadataType="Disco" ID="6d041028-5dc8-4573-badf-a0d120f51faa" SourceId="1" SourceUrl="http://localhost:8080/ServicioRegistro?disco" />
-    <MetadataFile FileName="ServicioRegistro2.xsd" MetadataType="Schema" ID="e55bcbc8-33eb-4384-a0fd-71a74c2f2bd7" SourceId="1" SourceUrl="http://localhost:8080/ServicioRegistro?xsd=xsd0" />
+    <MetadataFile FileName="ServicioRegistro1.wsdl" MetadataType="Wsdl" ID="f8ad23e6-d26d-4805-98ce-1771254607dd" SourceId="1" SourceUrl="http://192.168.100.68:8080/ServicioRegistro?wsdl" />
+    <MetadataFile FileName="ServicioRegistro3.xsd" MetadataType="Schema" ID="a7dae8dc-651b-459a-9717-cd073babe9b7" SourceId="1" SourceUrl="http://192.168.100.68:8080/ServicioRegistro?xsd=xsd0" />
+    <MetadataFile FileName="ServicioRegistro31.xsd" MetadataType="Schema" ID="54ae6c2f-f848-4aec-b7a7-4d8cb2f454e9" SourceId="1" SourceUrl="http://192.168.100.68:8080/ServicioRegistro?xsd=xsd2" />
+    <MetadataFile FileName="ServicioRegistro32.xsd" MetadataType="Schema" ID="0e722da7-0c3d-49a7-a489-f3d8ded28dc2" SourceId="1" SourceUrl="http://192.168.100.68:8080/ServicioRegistro?xsd=xsd1" />
+    <MetadataFile FileName="ServicioRegistro1.disco" MetadataType="Disco" ID="3a86530a-85a9-4ca0-9412-1fea7dc32eb3" SourceId="1" SourceUrl="http://192.168.100.68:8080/ServicioRegistro?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

@@ -19,13 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8080/ServicioChat" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://192.168.100.68:8080/ServicioChat" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServicioChat1.xsd" MetadataType="Schema" ID="5344f71a-9700-4251-9355-54ca22e7b7d3" SourceId="1" SourceUrl="http://localhost:8080/ServicioChat?xsd=xsd0" />
-    <MetadataFile FileName="ServicioChat.disco" MetadataType="Disco" ID="4da59802-dca5-44dc-8d6a-59953e71ec3d" SourceId="1" SourceUrl="http://localhost:8080/ServicioChat?disco" />
-    <MetadataFile FileName="ServicioChat.xsd" MetadataType="Schema" ID="8393258c-4d34-43f3-980a-17c0e2db1781" SourceId="1" SourceUrl="http://localhost:8080/ServicioChat?xsd=xsd1" />
-    <MetadataFile FileName="ServicioChat.wsdl" MetadataType="Wsdl" ID="988290fd-9a48-4634-9ef5-65d2134513ae" SourceId="1" SourceUrl="http://localhost:8080/ServicioChat?wsdl" />
+    <MetadataFile FileName="ServicioChat1.disco" MetadataType="Disco" ID="fe95e046-8098-4e1e-b617-579d7dee30fc" SourceId="1" SourceUrl="http://192.168.100.68:8080/ServicioChat?disco" />
+    <MetadataFile FileName="ServicioChat2.xsd" MetadataType="Schema" ID="a2387809-ad31-4ecf-9742-1f4738e1f2d6" SourceId="1" SourceUrl="http://192.168.100.68:8080/ServicioChat?xsd=xsd0" />
+    <MetadataFile FileName="ServicioChat1.wsdl" MetadataType="Wsdl" ID="4a3018bd-46d4-42d4-aeb1-b6c3a9989dad" SourceId="1" SourceUrl="http://192.168.100.68:8080/ServicioChat?wsdl" />
+    <MetadataFile FileName="ServicioChat21.xsd" MetadataType="Schema" ID="4d111640-4190-4ff0-bab3-aecc6ed614be" SourceId="1" SourceUrl="http://192.168.100.68:8080/ServicioChat?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

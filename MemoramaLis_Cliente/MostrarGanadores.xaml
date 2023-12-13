@@ -29,16 +29,12 @@
        
         <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Border Width="215.91" Height="243" Background="#4200FF" BorderBrush="Black" BorderThickness="1" Margin="10">
-                <Image Width="215.91" Height="243"/>
-            </Border>
-
-            <Border Width="215.91" Height="243" Background="#4200FF" BorderBrush="Black" BorderThickness="1" Margin="10">
-                <Image Width="215.91" Height="243"/>
+                <Image x:Name="ImgGanador" Width="215.91" Height="243"/>
             </Border>
         </StackPanel>
 
         
-        <TextBlock Grid.Row="2" Grid.Column="1" Text="Puntuación: 26" FontSize="48" FontFamily="Inter" FontWeight="Bold" Foreground="Black" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:Name="TBPuntuacion" Grid.Row="2" Grid.Column="1" Text="Puntuación: 26" FontSize="48" FontFamily="Inter" FontWeight="Bold" Foreground="Black" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
 
 </Page>

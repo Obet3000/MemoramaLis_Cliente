@@ -72,9 +72,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Chat.xaml.cs">
-      <DependentUpon>Chat.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Configuraciones.xaml.cs">
       <DependentUpon>Configuraciones.xaml</DependentUpon>
     </Compile>
@@ -115,10 +112,6 @@
     <Compile Include="VentanaIngresaCodigo.xaml.cs">
       <DependentUpon>VentanaIngresaCodigo.xaml</DependentUpon>
     </Compile>
-    <Page Include="Chat.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Configuraciones.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -194,44 +187,44 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Connected Services\AutentificacionServicio\AutentificacionServicio.wsdl" />
-    <None Include="Connected Services\AutentificacionServicio\AutentificacionServicio.xsd">
+    <None Include="Connected Services\AutentificacionServicio\AutentificacionServicio1.wsdl" />
+    <None Include="Connected Services\AutentificacionServicio\AutentificacionServicio3.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\AutentificacionServicio\AutentificacionServicio1.xsd">
+    <None Include="Connected Services\AutentificacionServicio\AutentificacionServicio31.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\AutentificacionServicio\AutentificacionServicio2.xsd">
+    <None Include="Connected Services\AutentificacionServicio\AutentificacionServicio32.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServicioChat\ServicioChat.wsdl" />
-    <None Include="Connected Services\ServicioChat\ServicioChat.xsd">
+    <None Include="Connected Services\ServicioChat\ServicioChat1.wsdl" />
+    <None Include="Connected Services\ServicioChat\ServicioChat2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServicioChat\ServicioChat1.xsd">
+    <None Include="Connected Services\ServicioChat\ServicioChat21.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServicioPartida\ServicioPartida.wsdl" />
-    <None Include="Connected Services\ServicioPartida\ServicioPartida.xsd">
+    <None Include="Connected Services\ServicioPartida\ServicioPartida1.wsdl" />
+    <None Include="Connected Services\ServicioPartida\ServicioPartida4.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServicioPartida\ServicioPartida1.xsd">
+    <None Include="Connected Services\ServicioPartida\ServicioPartida41.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServicioPartida\ServicioPartida2.xsd">
+    <None Include="Connected Services\ServicioPartida\ServicioPartida42.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServicioPartida\ServicioPartida3.xsd">
+    <None Include="Connected Services\ServicioPartida\ServicioPartida43.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServicioRegistro\ServicioRegistro.wsdl" />
-    <None Include="Connected Services\ServicioRegistro\ServicioRegistro.xsd">
+    <None Include="Connected Services\ServicioRegistro\ServicioRegistro1.wsdl" />
+    <None Include="Connected Services\ServicioRegistro\ServicioRegistro3.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServicioRegistro\ServicioRegistro1.xsd">
+    <None Include="Connected Services\ServicioRegistro\ServicioRegistro31.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServicioRegistro\ServicioRegistro2.xsd">
+    <None Include="Connected Services\ServicioRegistro\ServicioRegistro32.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
@@ -265,9 +258,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServicioChat\ServicioChat.disco" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Connected Services\ServicioChat\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
@@ -284,9 +274,6 @@
       <Project>{9250c6a4-26cc-4f13-bb62-8e9c60d38efb}</Project>
       <Name>Logica</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\AutentificacionServicio\AutentificacionServicio.disco" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Recursos\" />
@@ -359,9 +346,6 @@
     <Resource Include="Imagenes\ReversoCarta.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServicioRegistro\ServicioRegistro.disco" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Connected Services\ServicioRegistro\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
@@ -372,6 +356,15 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\AutentificacionServicio\AutentificacionServicio1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServicioChat\ServicioChat1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServicioRegistro\ServicioRegistro1.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

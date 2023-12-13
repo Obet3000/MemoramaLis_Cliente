@@ -31,10 +31,10 @@
   </wsp:Policy>
   <wsdl:types>
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
-      <xsd:import schemaLocation="http://localhost:8080/ServicioPartida?xsd=xsd0" namespace="http://tempuri.org/" />
-      <xsd:import schemaLocation="http://localhost:8080/ServicioPartida?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-      <xsd:import schemaLocation="http://localhost:8080/ServicioPartida?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Dominio" />
-      <xsd:import schemaLocation="http://localhost:8080/ServicioPartida?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://192.168.100.68:8080/ServicioPartida?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.100.68:8080/ServicioPartida?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.100.68:8080/ServicioPartida?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Dominio" />
+      <xsd:import schemaLocation="http://192.168.100.68:8080/ServicioPartida?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IServicioPartida_UnirseAPartida_InputMessage">
@@ -97,6 +97,9 @@
   <wsdl:message name="IServicioPartida_RecibirTurno_OutputCallbackMessage">
     <wsdl:part name="parameters" element="tns:RecibirTurno" />
   </wsdl:message>
+  <wsdl:message name="IServicioPartida_RecibirGanador_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:RecibirGanador" />
+  </wsdl:message>
   <wsdl:portType name="IServicioPartida">
     <wsdl:operation name="UnirseAPartida">
       <wsdl:input wsaw:Action="http://tempuri.org/IServicioPartida/UnirseAPartida" message="tns:IServicioPartida_UnirseAPartida_InputMessage" />
@@ -157,6 +160,9 @@
     </wsdl:operation>
     <wsdl:operation name="RecibirTurno">
       <wsdl:output wsaw:Action="http://tempuri.org/IServicioPartida/RecibirTurno" message="tns:IServicioPartida_RecibirTurno_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RecibirGanador">
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioPartida/RecibirGanador" message="tns:IServicioPartida_RecibirGanador_OutputCallbackMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="NetTcpBinding_IServicioPartida" type="tns:IServicioPartida">
@@ -282,12 +288,18 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="RecibirGanador">
+      <soap12:operation soapAction="http://tempuri.org/IServicioPartida/RecibirGanador" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="ServicioPartida">
     <wsdl:port name="NetTcpBinding_IServicioPartida" binding="tns:NetTcpBinding_IServicioPartida">
-      <soap12:address location="net.tcp://localhost:8090/ServicioPartida/ServicioPartida" />
+      <soap12:address location="net.tcp://192.168.100.68:8090/ServicioPartida/ServicioPartida" />
       <wsa10:EndpointReference>
-        <wsa10:Address>net.tcp://localhost:8090/ServicioPartida/ServicioPartida</wsa10:Address>
+        <wsa10:Address>net.tcp://192.168.100.68:8090/ServicioPartida/ServicioPartida</wsa10:Address>
         <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
           <Upn>DESKTOP-54H68P7\obeth</Upn>
         </Identity>
