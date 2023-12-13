@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8080/ServicioPartida?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://192.168.100.68:8080/ServicioPartida?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServicioPartida3.xsd" MetadataType="Schema" ID="8664f71d-e641-49ea-8903-d029d3e341ce" SourceId="1" SourceUrl="http://localhost:8080/ServicioPartida?xsd=xsd3" />
-    <MetadataFile FileName="ServicioPartida.wsdl" MetadataType="Wsdl" ID="acfc286c-0ce9-4afd-aafb-6d83042258e5" SourceId="1" SourceUrl="http://localhost:8080/ServicioPartida?wsdl" />
-    <MetadataFile FileName="ServicioPartida2.xsd" MetadataType="Schema" ID="290c52b1-70c7-4d2e-a09f-c8b694e75d14" SourceId="1" SourceUrl="http://localhost:8080/ServicioPartida?xsd=xsd1" />
-    <MetadataFile FileName="ServicioPartida.xsd" MetadataType="Schema" ID="bef12976-038a-4a70-a7e1-35a0ce7dbeda" SourceId="1" SourceUrl="http://localhost:8080/ServicioPartida?xsd=xsd2" />
-    <MetadataFile FileName="ServicioPartida1.xsd" MetadataType="Schema" ID="e6ed47b1-101f-44d9-8182-2ffdeb721e93" SourceId="1" SourceUrl="http://localhost:8080/ServicioPartida?xsd=xsd0" />
+    <MetadataFile FileName="ServicioPartida4.xsd" MetadataType="Schema" ID="12e1b2cc-bb39-4a11-8211-aaff44195a03" SourceId="1" SourceUrl="http://192.168.100.68:8080/ServicioPartida?xsd=xsd1" />
+    <MetadataFile FileName="ServicioPartida41.xsd" MetadataType="Schema" ID="5e5145f4-6b28-4ed0-8e88-b122614b1076" SourceId="1" SourceUrl="http://192.168.100.68:8080/ServicioPartida?xsd=xsd0" />
+    <MetadataFile FileName="ServicioPartida42.xsd" MetadataType="Schema" ID="8b418784-1537-42f7-b556-6c68f54d7cc6" SourceId="1" SourceUrl="http://192.168.100.68:8080/ServicioPartida?xsd=xsd3" />
+    <MetadataFile FileName="ServicioPartida43.xsd" MetadataType="Schema" ID="57a1641f-ae91-453d-958f-06a1a4843ae6" SourceId="1" SourceUrl="http://192.168.100.68:8080/ServicioPartida?xsd=xsd2" />
+    <MetadataFile FileName="ServicioPartida1.wsdl" MetadataType="Wsdl" ID="ac018ca1-75fa-4ecb-b50a-6c893f7562cd" SourceId="1" SourceUrl="http://192.168.100.68:8080/ServicioPartida?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

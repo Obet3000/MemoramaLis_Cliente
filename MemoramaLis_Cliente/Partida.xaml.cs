@@ -27,9 +27,9 @@ namespace MemoramaLis_Cliente
         IServicioPartida _servicioPartida;
         string comparador = null;
         int movimientoAnterior = 0;
-        private int turno = -1;
+        private int turno = 0;
         private int cartasSeleccionada = 0;
-
+        int turnoPartida = 0;
         public Partida()
         {
             InitializeComponent();
@@ -78,7 +78,7 @@ namespace MemoramaLis_Cliente
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (turno >= 0 && cartasSeleccionada < 2)
+            if (turno == turnoPartida && cartasSeleccionada < 2)
             {
                     cartasSeleccionada++;
                     Button clickedButton = sender as Button;
@@ -95,7 +95,6 @@ namespace MemoramaLis_Cliente
                             {
                                 comparador = cartaSeleccionada;
                                 _servicioPartida.EnviarMovimiento(numeroDeCarta, JugadorSingleton.ObtenerInstancia().NombreJugador, PartidaSingleton.ObtenerInstancia().codigoDePartida, "Espera", "A");
-
                             }
                             else
                             {
@@ -142,6 +141,10 @@ namespace MemoramaLis_Cliente
                 imgJugador.Source = new BitmapImage(new Uri(jugadores.ElementAt(i - 1).Fotos, UriKind.Relative));
                 Label lbJugador = (Label)this.FindName("LBNombreJugador" + i);
                 lbJugador.Content = jugadores.ElementAt(i - 1).NombreJugador;
+                if (jugadores.ElementAt(i-1).NombreJugador == JugadorSingleton.ObtenerInstancia().NombreJugador)
+                {
+                    turno = i - 1;
+                }
             }
         }
 
@@ -170,38 +173,49 @@ namespace MemoramaLis_Cliente
             if (resultado.Equals("Asertado"))
             {
                 SeleccionarCarta(movimiento);
-                MessageBox.Show(nombreJugador + " suma un punto.");
+                MessageBox.Show(nombreJugador + " suma un punto.", "Punto", MessageBoxButton.OK, MessageBoxImage.Information);
                 movimientoAnterior = 0;
                 cartasSeleccionada = 0;
             }
-            else if (resultado.Equals("Fallado"))
+            else 
             {
-                SeleccionarCarta(movimiento);
-
-                await Task.Delay(2000);
-
-                TaparCartas(movimiento, movimientoAnterior);
-                movimientoAnterior = 0;
-                PartidaSingleton.ObtenerInstancia().numeroDeJugadores = 2;
-                if (turno < PartidaSingleton.ObtenerInstancia().numeroDeJugadores-1)
+                if (resultado.Equals("Fallado"))
                 {
-                    _servicioPartida.PasarTurno(turno + 1, PartidaSingleton.ObtenerInstancia().codigoDePartida);
-                    turno = -1;
+                    SeleccionarCarta(movimiento);
+
+                    await Task.Delay(2000);
+
+                    TaparCartas(movimiento, movimientoAnterior);
+                    if (turno == turnoPartida && movimientoAnterior != 0)
+                    {
+                        _servicioPartida.PasarTurno(turno, PartidaSingleton.ObtenerInstancia().codigoDePartida);
+
+                    }
+                    movimientoAnterior = 0;
+                    
+                }
+                else
+                {
+                    SeleccionarCarta(movimiento);
+                    movimientoAnterior = movimiento;
                 }
             }
-            else
-            {
-                SeleccionarCarta(movimiento);
-                movimientoAnterior = movimiento;
-            }
+            
         }
 
         public void RecibirTurno(int turno)
         {
-            this.turno = turno;
-   //       MessageBox.Show("Es tú turno");
+            turnoPartida = turno;
             cartasSeleccionada = 0;
+            
+   //       MessageBox.Show("Es tú turno");
+            
             //Iniciar el timer
+        }
+
+        public void RecibirGanador(JugadoresDTO ganador)
+        {
+            ;
         }
     }
 }

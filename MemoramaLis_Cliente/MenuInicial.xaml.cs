@@ -36,21 +36,11 @@ namespace MemoramaLis_Cliente
 
         private void BtnCrearChat_Click(object sender, RoutedEventArgs e)
         {      
-            ChatVentana chatVentana = new ChatVentana(null);
-            this.NavigationService.Navigate(chatVentana);
-
         }
 
         private void BtnUnirseAChat_Click(object sender, RoutedEventArgs e)
         {
-            VentanaIngresaCodigo ventanaIngresaCodigo = new VentanaIngresaCodigo();
-            ventanaIngresaCodigo.ShowDialog();
-            if (ventanaIngresaCodigo.CodigoSala != null)
-            {
-                string codigoSala = ventanaIngresaCodigo.CodigoSala;
-                ChatVentana chatVentana = new ChatVentana(codigoSala);
-                this.NavigationService.Navigate(chatVentana);
-            }
+            
 
         }
 

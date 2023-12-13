@@ -58,6 +58,7 @@ namespace MemoramaLis_Cliente
             {
                 InstanceContext context = new InstanceContext(this);
                 _servicioPartida = new ServicioPartidaClient(context);
+                servicioChat = new ServicioChatClient(context);
                 PartidaSingleton partidaSingleton = PartidaSingleton.ObtenerInstancia();
                 partidaSingleton.codigoDePartida = codigoPartida;
                 JugadoresDTO jugador = new JugadoresDTO()
@@ -197,6 +198,11 @@ namespace MemoramaLis_Cliente
 
             }
 
+        }
+
+        public void RecibirGanador(JugadoresDTO ganador)
+        {
+            throw new NotImplementedException();
         }
     }
 }
